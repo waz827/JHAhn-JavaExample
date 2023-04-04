@@ -7,7 +7,7 @@ public class MyDate {
     public void setDay(int day){
         if(month==2){
             if(day<1 || day>28){
-                System.out.println("날짜형식이 맞지 않습니다.");
+                System.out.println("날짜형식 안맞다고");
             }
             else {
                 this.day=day;

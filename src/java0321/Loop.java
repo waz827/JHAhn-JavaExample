@@ -26,7 +26,7 @@ public class Loop {
             num++;
         }
         while(num<=10);
-        System.out.println("1부터 10까지의 합은"+sum+"입니다.");
+        System.out.println("1부터 10까지의 합은"+sum+"!.");
     }
     public static void main(String[] arg){
         int num=1;
@@ -36,7 +36,7 @@ public class Loop {
             sum+=num;
             num++;
         }
-        System.out.println("1부터 10까지의 합은" +sum+ "입니다.");
+        System.out.println("1부터 10까지의 합은" +sum+ "!.");
 
         dowhileEx();
         forEx();
