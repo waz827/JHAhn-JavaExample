@@ -8,11 +8,12 @@ public class Subway {
         this.lineNumber= lineNumber;
     }
     public void take(int money){
-        this.money= money;
-        passgerCount++;
+        ++passgerCount;
+        this.money= money*passgerCount;
+
     }
     public void showInfo(){
-        System.out.println("지하철"+lineNumber+"번의 승객은"+passgerCount+
-                "명이고, 수입은"+money+"입니다 개꿀!");
+        System.out.println("지하철"+lineNumber+"의 승객은"+passgerCount+
+                "명이고, 수입은"+money+"개꿀!");
     }
 }
