@@ -15,6 +15,7 @@ public class Student {
     public void takeSubway(Subway subway) {
         subway.take(1500);
         this.money-=1500;
+
     }
     public void showInfo(){
         System.out.println(studentName+"는 돈을"+money+"만큼 내면됨");

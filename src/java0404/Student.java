@@ -2,10 +2,22 @@ package java0404;
 
 public class Student {
 
-    int studentId;
-    String studentName;
+    private int studentId;
+    private String studentName;
     String grade;
 
+    public  void Studenti(int i){
+        this.studentId = i;
+    }
+    public void SSS(String a){
+        this.studentName = a;
+    }
+    public String returnS(){
+        return this.studentName;
+    }
+    public int returnSelf(){
+        return this.studentId;
+    }
     public String getStudentName(){
         return  studentName;
     }

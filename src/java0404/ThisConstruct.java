@@ -2,6 +2,7 @@ package java0404;
 class PersonThis{
     String name;
     int age;
+    int age2;
     PersonThis(){
         this("이름이 없어요...",1);
     }
@@ -9,22 +10,22 @@ class PersonThis{
         this.name= name;
         this.age= age;
     }
-    PersonThis(String name, int age, int age2){
-        this.name=name;
-        this.age=age;
-    }
-    PersonThis returnSelf(){
-        return this;
+    public void person(int i){
+        this.age=i;
     }
 }
 public class ThisConstruct {
     public static void main(String[] args) {
-        PersonThis personThis= new PersonThis();
-        System.out.println(personThis.name);
-        System.out.println(personThis.age);
+        Student student = new Student();
+        student.Studenti(12);
+        student.SSS("ㅇ");
 
-        PersonThis personThis1= personThis.returnSelf();
-        System.out.println(personThis1);
-        System.out.println(personThis1);
+        PersonThis personThis = new PersonThis();
+        personThis.person(7);
+        System.out.println(personThis.age);
+        System.out.println(student.returnS());
+        System.out.println(student.returnSelf());
+
+
     }
 }
